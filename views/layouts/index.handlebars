@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="/static/js/script.js"></script>
+    <title>46Soles-Productos</title>
+</head>
+<body>
+    <h1>Mis Productos</h1>
+  <ul>
+    {{#each products}}
+      <li>"Id": {{this.id}} - "Category": {{this.category}} - "Object": {{this.object}} - "Title": {{this.title}} - "Description": {{this.description}} - "Code": {{this.code}} - "Stock": {{this.stock}} - "Status": {{this.status}} - "Price": {{this.price}}</li>
+    {{/each}}
+  </ul>
+</body>
+</html>
